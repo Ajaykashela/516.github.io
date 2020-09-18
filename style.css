@@ -7,8 +7,11 @@
 }
 body{
   
-    background: #08001b;
+    background: white;
     
+}
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg)
 }
 
 .navbar {
@@ -18,6 +21,7 @@ body{
                 top: 0;
                 width: 100%;
                 z-index: 2;
+
 }
 .navbar img{
 
@@ -64,7 +68,7 @@ body{
     position: relative;
     width: 300px;
     height: 400px;
-    background: #0c002b;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +79,7 @@ body{
 }
 
 .containe .card{
-    opacity: 0.2;
+    opacity: 0.5;
 
 }
 .containe .card:hover{
@@ -101,7 +105,7 @@ body{
     right: 30px;
     font-size: 4em;
     font-weight: 800;
-    color: #1779ff;
+    color: red;
     z-index: ;
     opacity: 0.1;
     transition: 0.5s;
@@ -129,12 +133,12 @@ body{
 
 }
 
-.container .card .content a{
+.containe .card .content a{
     display: inline-block;
     margin-top: 15px;
     padding: 8px 15px;
-    background-color: #fff;
-    color: #0c002b;
+    
+    color: red;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -147,7 +151,7 @@ body{
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, transparent, #1779ff);
+    background: linear-gradient(to right, transparent, red);
     animation: animate1 2s linear infinite;
 }
 
@@ -173,7 +177,7 @@ body{
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, #1779ff);
+    background: linear-gradient(to bottom, transparent, red);
     animation: animate2 2s linear infinite;
     animation-delay: 1s;
 }
@@ -193,7 +197,7 @@ body{
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to left, transparent, #1779ff);
+    background: linear-gradient(to left, transparent, red);
     animation: animate3 2s linear infinite;
 }
 
@@ -212,7 +216,7 @@ body{
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to top, transparent, #1779ff);
+    background: linear-gradient(to top, transparent, red);
     animation: animate4 2s linear infinite;
     animation-delay: 1s;
 }
@@ -241,3 +245,17 @@ body{
     background-color: white;
     color: black;
 }
+.but .button
+{
+  position: relative;
+  text-align: center;
+  width: 30px;
+  padding: 4px;
+  font-size: 30px;
+  color: white;
+  font-family: poppins;
+  cursor: pointer;
+  z-index: 3;
+
+}
+
